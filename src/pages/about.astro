@@ -1,8 +1,8 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Navigation from "../components/global/Navigation.astro";
-import Hero from "../components/landing/Hero.astro";
-import Entries from "../components/landing/Entries.astro";
+import Hero from "../components/about/Hero.astro";
+import Content from "../components/about/Content.astro";
 import { AstroSeo } from "@astrolib/seo";
 ---
 
@@ -10,7 +10,7 @@ import { AstroSeo } from "@astrolib/seo";
 Use AstroSeo in all the pages you want different Seo than the index page
 -->
 <AstroSeo
-  title="Streamer | Home"
+  title="Streamer | About"
   description="Your site description goes here"
   canonical="https://streamer.supremeuikits.com"
   openGraph={{
@@ -44,8 +44,7 @@ Use AstroSeo in all the pages you want different Seo than the index page
   }}
 />
 <BaseLayout>
-  <Navigation/>
+  <Navigation />
   <Hero />
-  <Entries />
-
+  <Content />
 </BaseLayout>

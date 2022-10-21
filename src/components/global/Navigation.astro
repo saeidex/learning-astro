@@ -1,0 +1,78 @@
+<div class="w-full mx-auto bg-white justify-center">
+  <div
+    class="flex w-full flex-col lg:flex-row lg:items-center lg:justify-between max-w-7xl lg:px-24 mx-auto px-6 py-2"
+    x-data="{ open: false }"
+  >
+    <div class="flex items-center flex-row justify-between text-zinc-800">
+      <a href="/" class="group block flex-shrink-0">
+        <div class="flex items-center">
+          <div>
+            <img
+              class="inline-block h-9 w-9 rounded-full"
+              src="https://pbs.twimg.com/profile_images/1556046410767818752/EjRXx_bq_400x400.jpg"
+              alt="logo"
+            />
+          </div>
+          <div class="ml-3">
+            <p
+              class="text-sm font-medium text-gray-700 group-hover:text-gray-900 font-display"
+            >
+              Streamer
+            </p>
+            <p
+              class="text-xs font-medium text-gray-500 group-hover:text-gray-700 uppercase trracking-widest"
+            >
+              We live in your podcast app
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <button
+        @click="open = !open"
+        class="focus:shadow-outline focus:outline-none md:hidden rounded-lg"
+        ><svg
+          class="h-8 w-8"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            d="M4 6h16M4 12h16M4 18h16"
+            :class="{'hidden': open, 'inline-flex': !open }"
+            class="inline-flex"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"></path>
+          <path
+            d="M6 18L18 6M6 6l12 12"
+            :class="{'hidden': !open, 'inline-flex': open }"
+            class="hidden"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"></path>
+        </svg>
+      </button>
+    </div>
+    <nav
+      :class="{'flex': open, 'hidden': !open}"
+      class="flex-grow flex-col hidden items-center lg:flex lg:flex-row lg:justify-start lg:mt-0 lg:p-0 lg:px-0 md:pb-0 opacity-100 p-4 px-5"
+    >
+      <a
+        class="text-zinc-500 text-sm duration-1000 ease-in-out focus:outline-none focus:shadow-none focus:text-black hover:text-zinc-900 lg:py-4 md:my-0 px-4 py-2 transform transition lg:ml-auto"
+        href="/about"
+        >About
+      </a><a
+        class="text-zinc-500 text-sm duration-1000 ease-in-out focus:outline-none focus:shadow-none focus:text-black hover:text-zinc-900 lg:py-4 md:my-0 px-4 py-2 transform transition"
+        href="/contact"
+        >Contact
+      </a><a
+        class="relative flex text-sm items-center h-[44px] px-4 rounded-xl text-zinc-800 hover:bg-zinc-100 bg-transparent gap-3"
+        href="#"
+        role="button"
+      >
+        <span>Buy for $39</span>
+      </a>
+    </nav>
+  </div>
+</div>

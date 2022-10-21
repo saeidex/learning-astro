@@ -104,9 +104,9 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ["Inter", ...defaultTheme.fontFamily.sans],
+        display: ["Neue Power", ...defaultTheme.fontFamily.sans],
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/line-clamp'),],
 }
