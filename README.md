@@ -4,7 +4,6 @@
 - @astrojs/tailwind - https://docs.astro.build/en/guides/integrations-guide/tailwind/
 - @astrojs/image - https://docs.astro.build/en/guides/integrations-guide/image/
 - @astrojs/sitemap - https://docs.astro.build/en/guides/integrations-guide/sitemap/
-- @astrojs/partytown - https://docs.astro.build/en/guides/integrations-guide/partytown/
 - Astrolib SEO - https://github.com/onwidget/astrolib/tree/main/packages/seo
 - Astro compress - https://github.com/NikolaRHristov/astro-compress#readme
 ## Template Structure
@@ -41,4 +40,4 @@ All commands are run from the root of the project, from a terminal:
 
 ## Want to learn more?
 
-Feel free to check Astroäs [documentation](https://docs.astro.build)
+Feel free to check Astros [documentation](https://docs.astro.build)
