@@ -104,7 +104,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        display: ["Neue Power", ...defaultTheme.fontFamily.sans],
+        display: ["Bebas Neue", ...defaultTheme.fontFamily.sans],
+        sans: ["Inter", ...defaultTheme.fontFamily.sans],
       },
     },
   },
