@@ -90,7 +90,7 @@ module.exports = {
       }),
 
       colors: {
-        "accent": {
+        "blue": {
           "50": "#E5E5FF",
           "100": "#CCCCFF",
           "200": "#9999FF",
@@ -109,6 +109,6 @@ module.exports = {
       },
     },
   },
-  plugins: [require('@tailwindcss/line-clamp'),
+  plugins: [
   require('@tailwindcss/forms'),],
 }
