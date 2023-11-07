@@ -1,7 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-:root { font-family: 'Inter', sans-serif; }
+:root {
+  font-family: "Inter", sans-serif;
+}
 @supports (font-variation-settings: normal) {
-  :root { font-family: 'Inter var', sans-serif; }
+  :root {
+    font-family: "Inter var", sans-serif;
+  }
+}
+@layer base {
+  [color-scheme="light"] {
+    color-scheme: light;
+    --brand: var(--brand-light);
+    --text1: var(--text1-light);
+    --surface1: var(--surface1-light);
+  }
 }
